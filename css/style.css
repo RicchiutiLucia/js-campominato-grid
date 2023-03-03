@@ -57,7 +57,14 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
+}
+.cyan{
+    background-color: cyan;
+}
+
+.d-none{
+    display: none;
 }
 
 footer span{

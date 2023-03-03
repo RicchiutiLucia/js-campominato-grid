@@ -6,11 +6,21 @@ ed emetto un messaggio in console con il numero della cella cliccata.*/
 
 const containerDom = document.querySelector('.container');
 
-for(let i=0; i <=0; i++){
+for( let i = 1; i <= 100; i++){
+
     const currentSquare = createNewSquare();
+
     currentSquare.append(i);
+
+    currentSquare.addEventListener('click', function() {
+        this.classList.toggle('cyan');
+        console.log(`Hai scelto la casella numero: ${i}`)
+    }
+    )
+
     containerDom.append(currentSquare);
 }
+
 
 //funzione per creare un nuovo quadrato
 function createNewSquare(){
