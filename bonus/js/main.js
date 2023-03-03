@@ -45,7 +45,7 @@ playDom.addEventListener('click', function(){
                 currentSquare.append(i);
             
                 currentSquare.addEventListener('click', function() {
-                    this.classList.toggle('cyan');
+                    this.classList.toggle('bg-color');
                     console.log(`Hai scelto la casella numero: ${i}`)
                 }
                 )
