@@ -59,12 +59,16 @@ main{
     align-items: center;
     font-size: 20px;
 }
-.cyan{
-    background-color: cyan;
+#title{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 50px;
 }
-
 .d-none{
     display: none;
+}
+.bg-color{
+    background-color: cyan;
 }
 
 footer span{
