@@ -11,13 +11,11 @@ const titleDom = document.getElementById('title');
 const selectedDom = document.getElementById('difficult');
 const squareArray =[];
 
+
 playDom.addEventListener('click', function(){
     titleDom.classList.add('d-none');
-    if(squareArray.length == 0){
-        
-
+    containerDom.innerHTML = '';
         if(selectedDom.value == "easy"){
-
             for( let i = 1; i <= 100; i++){
 
                 const currentSquare = createNewSquare();
@@ -36,8 +34,6 @@ playDom.addEventListener('click', function(){
                 squareArray.push(currentSquare);
     
             }
-    
-            console.log(squareArray);
         }else if(selectedDom.value == "medium"){
 
             for( let i = 1; i <= 81; i++){
@@ -59,7 +55,7 @@ playDom.addEventListener('click', function(){
     
             }
     
-            console.log(squareArray);
+            
         }else if(selectedDom.value == "hard"){
 
             for( let i = 1; i <= 49; i++){
@@ -81,10 +77,7 @@ playDom.addEventListener('click', function(){
     
             }
     
-            console.log(squareArray);
         }
-    }
-
     }
 )
 
